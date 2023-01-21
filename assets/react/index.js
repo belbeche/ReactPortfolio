@@ -6,6 +6,8 @@ import Apropos from "./components/Apropos";
 import Contact from "./components/Contact";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Projets from "./components/Projets";
+import ProjetShow from "./components/ProjetShow";
 
 
 const container = document.getElementById('app');
@@ -17,8 +19,10 @@ root.render(
         <Router>
             <Nav />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" exact element={<Home />} />
                 <Route path="/apropos" element={<Apropos />} />
+                <Route path="/projets" exact element={<Projets />} />
+                <Route path="/projet/:id" element={<ProjetShow />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
