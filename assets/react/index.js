@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Apropos from "./components/Apropos";
 import Contact from "./components/Contact";
+import Login from "./components/Login";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Projets from "./components/Projets";
